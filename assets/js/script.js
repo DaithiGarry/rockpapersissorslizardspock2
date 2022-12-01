@@ -48,7 +48,7 @@ function generateComputerChoice() {
       }
     computerChoiceDisplay.innerHTML = computerChoice
   }
-  
+
 //function to get the result of the contest between the user and the computer.
 function getResult() {
   if (computerChoice === userChoice) {
@@ -135,4 +135,21 @@ function getResult() {
       incrementcorrect();
     }
   resultDisplay.innerHTML = result;
+}
+
+//function to increase the users score for each win over the computer.
+function incrementcorrect() {
+    let oldscore = parseInt(document.getElementById('correct').innerText);
+    document.getElementById('correct').innerText = ++oldscore;
+    if (oldscore > 4) {
+      alert('Game Over you win!'); 
+    }
+}
+//function to increase the computers score for each win over the user.
+function incrementincorrect() {
+    let oldscore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldscore;
+    if  (oldscore >4) {
+      alert('Game Over you lose'); 
+    }
 }
