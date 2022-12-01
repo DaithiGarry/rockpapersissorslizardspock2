@@ -47,7 +47,7 @@ function generateComputerChoice() {
       computerChoice = 'spock';
       }
     computerChoiceDisplay.innerHTML = computerChoice
-  }
+}
 
 //function to get the result of the contest between the user and the computer.
 function getResult() {
@@ -145,6 +145,7 @@ function incrementcorrect() {
       alert('Game Over you win!'); 
     }
 }
+
 //function to increase the computers score for each win over the user.
 function incrementincorrect() {
     let oldscore = parseInt(document.getElementById('incorrect').innerText);
@@ -152,4 +153,14 @@ function incrementincorrect() {
     if  (oldscore >4) {
       alert('Game Over you lose'); 
     }
-}
+} 
+
+//function to reset game after the user or computer has accured 5 wins to end the game.
+resetGameButton.addEventListener("click", function() {
+    correctScoreElement.innerHTML = 0;
+    incorrectScoreElement.innerHTML= 0;
+    computerChoiceDisplay.innerHTML = '';
+    resultDisplay.innerHTML = '';
+    userChoiceDisplay.innerHTML= '';
+    }
+);
