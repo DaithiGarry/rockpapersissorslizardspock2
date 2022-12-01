@@ -1,0 +1,436 @@
+/* --------- Global style, altered from Love Maths project */
+
+body {
+    background-color: #E6ECF0;
+    font-family: sans-serif;
+    color: #292a2b;
+    text-align: center;
+}
+
+/* --------- Heading, altered from Love Maths project */
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    max-height: 2%;
+    
+}
+/*----------Footer, created for this project */
+footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+    text-align: center;
+    color:#E6ECF0;
+    background-color: #292a2b;
+}
+
+/*----------Logo, created for this project */
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 315px;
+    height: 60px;
+    width: 85px;
+    padding: 8px 10px;
+    
+}
+/*----------Reset button, created for this project */
+#reset {
+    position: absolute;
+    top: 20px;
+    right: 350px;
+    font-size: 35px;
+    background-color: #445361;
+    color: #E6ECF0;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+#reset:hover {
+    background-color: #b3b9bd;
+    color:#474e53;
+}
+/*----------colors for directions under heading-----*/
+#purple {
+    color: purple;
+}
+
+#blue {
+    color: blue;
+}
+
+#green {
+    color: green;
+}
+
+#orange {
+    color: darkgoldenrod;
+}
+
+#red {
+    color: red;
+}
+/* --------- Game layout, altered from Love Maths project */
+
+.game-area {
+    background-color: #f9f9fa;
+    box-sizing: border-box;
+    width: 85%;
+    max-height: 650px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.control-area {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/*-----------Choice-area, created for this project*/
+.choice-area {
+    width: 50%;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 10px 0;
+}
+
+
+.choice-area span {
+    padding: 0 15px;
+}
+
+/*----------score-board, created for this project but similiar in construction to love maths project*/
+.score-board {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 2rem;
+}
+
+#correct {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+p.scores {
+         padding: 0 5px;
+         margin-top: 0;
+}
+
+/*----------scores disply alteration, created for this project.*/
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+/* --------- Buttons, altered from the Love Maths project */
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+.btn--big::after{
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: -0.25em;
+}
+
+.btn--blue {
+    border-color: blue;
+    color: blue;
+}
+
+.btn--blue:active,
+.btn--blue:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.btn--orange {
+    border-color: orange;
+    color: orange;
+}
+
+.btn--orange:active,
+.btn--orange:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.btn--purple {
+    border-color: purple;
+    color: purple;
+}
+
+.btn--purple:active,
+.btn--purple:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+.btn--green {
+    border-color: green;
+    color: green;
+}
+
+.btn--green:active,
+.btn--green:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn--red {
+    border-color: red;
+    color: red;
+}
+
+.btn--red:active,
+.btn--red:hover {
+    background-color: darkred;
+    color: white;
+}
+
+
+/* --------- Media queries */
+
+@media (max-width: 414px) {
+    .controls-area {
+        width: 100%;
+        height: 200px;
+    }
+
+    .btn--big {
+        margin: 0 10px;
+        padding: 5px;
+        border: 5px solid;
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+        
+    }
+
+    .btn--big::after {
+        font-size: 0.6rem;
+        left: -0.7rem;
+    }
+
+    .choice-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .choice-area span {
+        padding: 0;
+    }
+
+    .score-board h3 {
+        margin-bottom: 0;
+       
+    }
+    
+    .score-board {
+        width: 100%;    
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: inline-block;
+        padding: 5px;
+    }
+
+
+    #reset {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        font-size: 25px;
+    }
+    .logo {
+        position: absolute;
+        top: 15px;
+        left: -4px;
+        height: 45px;
+        width: 65px;
+         
+    }
+    
+    .heading {
+        text-align:center;
+        font-size: 1.5rem;
+        width: 65%;
+        max-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2%;
+       
+    }
+    .game-area {
+        max-height: 675px;
+        
+    }
+    .control.area h3 {
+        font-size: 1.0rem; 
+    }
+    #control.area h3 {
+        font-size: 1.0rem; 
+    }
+    .choice-area h3 {
+        font-size: 1.2rem;
+    }
+    .score-board h3 {
+        font-size: 1.2rem;
+    }
+
+    .score-board p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .control-area {
+        width: 100%;
+    }
+
+    .btn--big {
+        margin: 0 10px;
+        padding: 5px;
+        border: 5px solid;
+        width: 60px;
+        height: 60px;
+        font-size: 2.0rem;
+        display: inline;
+        
+    }
+
+    .btn--big::after {
+        font-size: 0.6rem;
+        left: -0.7rem;
+    }
+
+    .choice-area {
+        padding: 2% 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    .choice-area span {
+        padding: 0;
+    }
+
+    .score-board {
+        width: 100%;
+        
+    }
+    .score-board h3 {
+        margin-bottom: 0;
+        
+    }
+
+    .scores {
+        margin: 0.1em 0;
+        display: inline-block;
+        padding: 5px;
+    }
+
+
+    #reset {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        font-size: 25px;
+    }
+    .logo {
+        position: absolute;
+        top: 15px;
+        left: -8px;
+        height: 50px;
+        width: 55px;
+         
+    }
+    
+    .heading {
+        max-width: 65%;
+    }
+    .game-area {
+        max-height: 480px;
+        
+    }
+
+    #control.area h3 {
+        font-size: 1.0rem; 
+    }
+    .choice-area h3 {
+        font-size: 1.2rem;
+    }
+    .score-board h3 {
+        font-size: 1.2rem;
+    }
+
+    .score-board p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1520px) {
+    #reset {
+        position: absolute;
+        top: 23px;
+        right: 5px;
+        font-size: 25px;
+    }
+    .logo {
+        position: absolute;
+        top: 15px;
+        left: -4px;
+        height: 45px;
+        width: 65px;
+         
+    }
+    .heading {
+        text-align:center;
+        font-size: 1.5rem;
+        width: 85%;
+        max-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2%;
+       
+    }
+}   
+
