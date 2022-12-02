@@ -82,7 +82,7 @@ This game is targetted at adults and children; in addition to, fans of the Big B
 
 ## Deployment
 - The site was deployed to Github pages.
-- The live link can be found at [github](https://)
+- The live link can be found at [github](https://daithigarry.github.io/rockpapersissorslizardspock2/)
 
 ## Content
 - The site was styled on the Love Maths project.
