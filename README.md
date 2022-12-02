@@ -9,10 +9,10 @@ This game is targetted at adults and children; in addition to, fans of the Big B
 ## Features
 ### Existing Features
 - Header
-  - At the top of the page the header shows the game name centrally, Rock, Paper, Scissors, Lizard, Spock in a clear font, which is contrasting from the background.
+  - At the top of the page the header shows the game's name centrally, Rock, Paper, Scissors, Lizard, Spock in a clear font, which is contrasting from the background.
   - The header makes it clear to the user what game they are playing.
   - On the right side of the header is a reset/refresh button, which acts to refresh if the player wants to play another game.
-  - On the left side of the header is a spoke hand signal icon, to provide balance to the header, with an icon either side of the header title and to provide the user with a spock reference for fun.
+  - On the left side of the header is a spock hand signal icon, to provide balance to the header, with an icon either side of the header title and to provide the user with a spock reference for fun.
 
 ![image of heading](/assets/images/heading.png)
 
@@ -28,7 +28,7 @@ This game is targetted at adults and children; in addition to, fans of the Big B
   - The Javascript code generates a random choice which is registered in the "Computer choice" field.
   - The result of the game, whether the player wins or loses is generated in the "results" field.
   - The score board is then update, for player "wins" and "loses".
-  - If the player reachs 5 wins or 5 loses, a message is displayed to state that the game is over.
+  - If the player reachs 5 wins or 5 loses, a message is displayed to state that the game is over and the player needs to reset/refresh to play again.
 
 ![image of game results](/assets/images/game_results.png)
 
@@ -38,7 +38,7 @@ This game is targetted at adults and children; in addition to, fans of the Big B
 ![image of the footer](/assets/images/footer.png)
 
 ## How to play the game
-- Players can start the game by selecting clicking any one of the icons rock, paper, scissors, lizard or spock, on the top of the page. Icons will change color to indictate which icon will be selected if clicked.
+- Players can start the game by clicking any one of the icons rock, paper, scissors, lizard or spock, on the top of the page. Icons will change color to indictate which icon will be selected if clicked.
 - When a particular icon is clicked by the player, the computer choice will automatically be generated at random and the resulting score will be tallied on the score board.
 - If the computer reaches a score of 5 first, the player will be notified by message that they lose the game. If the player reaches a score of 5 first, the player will be notified that they win the game.
 - Once the game is complete, the reset button needs to be clicked in order to start a fresh game.  
