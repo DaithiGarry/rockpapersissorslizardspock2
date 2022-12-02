@@ -142,7 +142,7 @@ function incrementcorrect() {
     let oldscore = parseInt(document.getElementById('correct').innerText);
     document.getElementById('correct').innerText = ++oldscore;
     if (oldscore > 4) {
-      alert('Game Over you win!'); 
+      alert('Game Over you win! PUSH RESET TO START AGAIN'); 
     }
 }
 
@@ -151,7 +151,7 @@ function incrementincorrect() {
     let oldscore = parseInt(document.getElementById('incorrect').innerText);
     document.getElementById('incorrect').innerText = ++oldscore;
     if  (oldscore >4) {
-      alert('Game Over you lose'); 
+      alert('Game Over you lose! PUSH RESET TO START AGAIN'); 
     }
 } 
 
